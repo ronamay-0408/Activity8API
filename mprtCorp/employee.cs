@@ -20,6 +20,7 @@ namespace mprtCorp
             comboBox1.SelectedIndexChanged += ComboBox1_SelectedIndexChanged;
         }
 
+        // POST Process
         private void postbtn_Click(object sender, EventArgs e)
         {
             string username = usernametxt.Text;
@@ -57,6 +58,7 @@ namespace mprtCorp
             }
         }
 
+        // GET Process
         private void getbtn_Click(object sender, EventArgs e)
         {
             using (var client = new HttpClient())
