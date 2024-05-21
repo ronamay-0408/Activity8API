@@ -90,6 +90,7 @@ namespace mprtCorp
             }
         }
 
+        // Load Department Name Process
         private async void LoadDepartments()
         {
             using (var client = new HttpClient())
@@ -113,6 +114,7 @@ namespace mprtCorp
             }
         }
 
+        // Selecting Process
         private async void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (comboBox1.SelectedIndex == -1)
